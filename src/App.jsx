@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "./App.css";
 import TopRow from "./TopRow";
 import BottomRow from "./BottomRow";
-import { restElement } from "@babel/types";
 
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
@@ -39,7 +38,7 @@ function App() {
           <button onClick={ () => setScore( awayName, 7) } className="awayButtons__touchdown">Away Touchdown</button>
           <button onClick={ () => setScore( awayName, 3) } className="awayButtons__fieldGoal">Away Field Goal</button>
         </div>
-        <button onClick={ () => reset() }>reset</button>
+        <button onClick={ () => reset() }>Reset</button>
       </section>
     </div>
   );
