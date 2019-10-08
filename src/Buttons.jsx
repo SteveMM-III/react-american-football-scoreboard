@@ -15,7 +15,7 @@ const Buttons = (props) => {
                 <button onClick={() => setScore(awayName, 7)} className="awayButtons__touchdown">Away Touchdown</button>
                 <button onClick={() => setScore(awayName, 3)} className="awayButtons__fieldGoal">Away Field Goal</button>
             </div>
-            <button onClick={() => reset()}>Reset</button>
+            <button onClick={ reset }>Reset</button>
         </section>
     );
 };
